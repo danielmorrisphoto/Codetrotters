@@ -1,0 +1,81 @@
+* {
+    font-size: 20px;
+    font-family: helvetica;
+    
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+.button {
+    color:#fff;
+    border-color:#fff;
+    padding:20px;
+}
+.r-button {
+	display: block;
+    padding:20px;
+	border: 1px solid;
+    border-color:#fff;
+    float: right;
+    color:#fff;
+}
+.l-button {
+	display: block;
+	border: 0px ;
+    border-color:#fff;
+    float: left;
+    padding:20%;
+    color:#fff;
+}
+
+.hello {
+    background-color:#13415C;
+    height:100px;
+}
+
+.awesome {
+    background-color:#7B9CAD;
+    color:#fff;
+    text-align: center;
+    padding:150px;
+}
+
+#features {
+    text-align: center;
+    background-color:#AEC4D1;
+    padding:120px;
+}
+
+.three-blocks {
+    text-align: center;
+    background-color:#AEC4D1;
+    float: left;
+}
+
+.footer {
+    text-align: center;
+    background-color:#0F6144;
+    color:#fff;
+}
+.team {
+    background-color:#8C1A2C;
+    text-align: center;
+    padding:150px;
+}
+h1 {
+    font-size:35pt;
+}
+h2 {
+    font-size:20pt;
+}
+.the-body {
+    background-color:#AEC4D1;
+}
+.l-phone {
+    float: left;
+}
+.r-email: {
+    float: right;
+}
