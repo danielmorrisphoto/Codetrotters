@@ -20,6 +20,23 @@ navbar {
     border-width: 1px;
     border-color: black;
 }
+btn {
+    padding: 6px 12px;
+    border: 0 none;
+    background: none;
+    background-image: none;
+    vertical-align: middle;
+    align-content: middle;
+}
+carousel-inner img{
+    height: 150px;
+    width: 100%;
+}
+carousel-inner {
+    height: 300px;
+    overflow: hidden;
+    
+}
 
 </style>
 
@@ -28,25 +45,35 @@ navbar {
         <!--NAVBAR START-->
             <div class="navbar">
                 <div class="row">
-                    <div class="col-md-1">
+                    <div class="col-md-1 btn">
                         <p>OnReplay</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 btn">
                         <!--This is just a space between On replay and Browse-->
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 btn">
                         <p>Browse</p>
                     </div>
-                    <div class="col-md-1">
-                        <p>Videos</p>
+                    <div class="col-md-1 btn">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Videos
+                            <span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 btn">
                         <p>Tv Shows</p>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 btn">
                         <p>Trending</p>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 btn">
                         <p>Blog</p>
                     </div>
                     <div class="col-md-2">
@@ -71,19 +98,19 @@ navbar {
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                <img src="http://placehold.it/1200x315" alt="...">
+                <img src="http://img.wallpaperlist.com/uploads/wallpaper/files/hum/hummingbird-and-green-leaf-wallpaper-53496176a9118.jpg" alt="...">
                 <div class="carousel-caption">
                     <h3>Caption Text</h3>
                 </div>
                 </div>
                 <div class="item">
-                <img src="http://placehold.it/1200x315" alt="...">
+                <img src="http://img.wallpaperlist.com/uploads/wallpaper/files/hum/hummingbird-and-green-leaf-wallpaper-53496176a9118.jpg" alt="...">
                 <div class="carousel-caption">
                     <h3>Caption Text</h3>
                 </div>
                 </div>
                 <div class="item">
-                <img src="http://placehold.it/1200x315" alt="...">
+                <img src="http://img.wallpaperlist.com/uploads/wallpaper/files/hum/hummingbird-and-green-leaf-wallpaper-53496176a9118.jpg" alt="...">
                 <div class="carousel-caption">
                     <h3>Caption Text</h3>
                 </div>
@@ -97,7 +124,10 @@ navbar {
             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- Carousel -->
+            </div> 
+            <!--CAROUSEL END-->
 
+            
+        
     </body>
 </html>
