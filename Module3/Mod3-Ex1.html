@@ -13,6 +13,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
 <style>
 navbar {
     border-style: solid;
@@ -24,12 +25,13 @@ navbar {
 
     </head>
     <body>
+        <!--NAVBAR START-->
             <div class="navbar">
                 <div class="row">
                     <div class="col-md-1">
                         <p>OnReplay</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <!--This is just a space between On replay and Browse-->
                     </div>
                     <div class="col-md-1">
@@ -47,17 +49,55 @@ navbar {
                     <div class="col-md-1">
                         <p>Blog</p>
                     </div>
-                    <div class="col-md-1">
-                        <form class="navbar-form navbar-right" role="search">
+                    <div class="col-md-2">
+                        <form class="navbar-form navbar-left" role="search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search">
                             </div>
-                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                         </form>
                     </div>
                 </div>
             </div>
-
+        <!--NAVBAR END-->
+        <!--CAROUSEL START-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                </div>
+                </div>
+                <div class="item">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                </div>
+                </div>
+                <div class="item">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div> <!-- Carousel -->
 
     </body>
 </html>
