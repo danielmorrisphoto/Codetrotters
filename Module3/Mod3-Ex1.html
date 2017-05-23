@@ -41,6 +41,24 @@ btn {
     height: 140px;
     border: 0px solid;
 }
+.form-center {
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.form-group {
+    width: 80%;
+    position: center;
+}
+.form-container {
+    width: 100%;
+    background-color: #A5D435;
+}
+.btn.outline {
+    background: none;
+    padding: 10px 100px;
+}
+
 
 </style>
 
@@ -229,7 +247,35 @@ btn {
             </div>
         </div>
         <!--Category Thumbnails ENDS-->
-            
+        <!--SIGN-UP BEGINS-->
+        <div class="container form-container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-8">
+                    <h2>Get weekly updates,sign up!</h2>
+                </div>
+            </div>
+            <form class="form-center">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="name" class="form-control" id="inputEmail" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="inputLastname">Last Name</label>
+                    <input type="lastname" class="form-control" id="inputLastname" placeholder="LastName">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </form>
+            <div class="button">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Sign up</button>
+            </div>
+        </div>
         
     </body>
 </html>
