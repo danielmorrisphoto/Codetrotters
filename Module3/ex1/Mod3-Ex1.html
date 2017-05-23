@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <meta=
+        <meta=charset="utf-8">
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,52 +13,59 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+<!--VV CSS BELOW VV-->
 <style>
-navbar {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-}
-btn {
-    padding: 6px 12px;
-    border: 0 none;
-    background: none;
-    background-image: none;
-    vertical-align: middle;
-    align-content: middle;
-}
-.carousel-inner {
-    max-height: 400px;
-    overflow: hidden;
-    width: 100%;
-}
-.container-fluid {
-    margin: 10%;
-    width: 100%;
-}
-.container-fluid img {
-    height: 140px;
-    border: 0px solid;
-}
-.form-center {
-    margin: 0 auto;
-    width: 80%;
-    
-}
-.form-group {
-    width: 80%;
-    position: center;
-}
-.form-container {
-    width: 100%;
-    background-color: #A5D435;
-}
-.btn.outline {
-    background: none;
-    padding: 10px 100px;
-}
+        navbar {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+        btn {
+            padding: 6px 12px;
+            border: 0 none;
+            background: none;
+            background-image: none;
+            vertical-align: middle;
+            align-content: middle;
+        }
+        .carousel-inner {
+            max-height: 400px;
+            overflow: hidden;
+            width: 100%;
+        }
+        .container-fluid {
+            margin: 10%;
+            width: 100%;
+        }
+        .container-fluid img {
+            height: 140px;
+            border: 0px solid;
+        }
+        .form-center {
+            margin: 0 auto;
+            width: 80%;
+            
+        }
+        .form-group {
+            width: 80%;
+            position: center;
+        }
+        .form-container {
+            width: 100%;
+            background-color: #A5D435;
+            color: white;
+            
+        }
+        .button .btn {
+            background: #A5D435;
+            padding: 10px 100px;
+            border-color: white;
+            max-width: 80%;
 
+        }
+        .h2 {
+            text-align: center;
+        }
 
 </style>
 
@@ -76,6 +83,7 @@ btn {
                     <div class="col-md-1 btn">
                         <p>Browse</p>
                     </div>
+                    <!--Video Btn-->
                     <div class="col-md-1 btn">
                             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Videos
@@ -247,35 +255,36 @@ btn {
             </div>
         </div>
         <!--Category Thumbnails ENDS-->
-        <!--SIGN-UP BEGINS-->
+        <!--SIGN-UP FORM BEGINS-->
         <div class="container form-container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-8">
+                <div class="col-md-4 col-md-offset-4">
                     <h2>Get weekly updates,sign up!</h2>
                 </div>
             </div>
             <form class="form-center">
                 <div class="form-group">
                     <label for="inputName">Name</label>
-                    <input type="name" class="form-control" id="inputEmail" placeholder="Name">
+                    <input type="name" class="form-control" id="inputEmail">
                 </div>
                 <div class="form-group">
                     <label for="inputLastname">Last Name</label>
-                    <input type="lastname" class="form-control" id="inputLastname" placeholder="LastName">
+                    <input type="lastname" class="form-control" id="inputLastname">
                 </div>
                 <div class="form-group">
                     <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" class="form-control" id="inputEmail">
                 </div>
                 <div class="form-group">
                     <label for="inputName">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="inputPassword">
                 </div>
             </form>
-            <div class="button">
+            <!--Signup BUTTON-->
+            <div class="button col-md-8 text-center">
                 <button type="button" class="btn btn-primary btn-lg btn-block">Sign up</button>
             </div>
         </div>
-        
+        <!--SIGN-UP FORM ENDS-->
     </body>
 </html>
