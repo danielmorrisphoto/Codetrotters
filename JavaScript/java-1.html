@@ -10,9 +10,20 @@
     </head>
 
     <body>
-        <h1>Hello World</h1>
-        <button id="button">Click Me!</button>
-        <script src='ex1.js'></script>
+        <form method="POST" action="www.example123456.com/user/form">
+
+            <input type="checkbox" name="hobbies[]" value="hobbies 1" />
+            <input type="checkbox" name="hobbies[]" value="hobbies 2" />
+            <input type="checkbox" name="hobbies[]" value="hobbies 3" />
+            <input type="checkbox" name="hobbies[]" value="hobbies 4" />
+            <input type="checkbox" name="hobbies[]" value="hobbies 5" />
+            <input type="checkbox" name="hobbies[]" value="hobbies 6" />
+            <!--<label>Full Name:</label><input type="text" maxlength="12" name="full-name" id="full-name" />
+            <label>Age:</label><input type="number" maxlength="3" name="age" id="age" />
+            <label>Favorite Color</label><input type="color" name="favorite-color" id="favorite-color" />-->
+            <button type="submit">Send</button>
+        </form>
+        <script src='main.js'></script>
     </body>
 
 
