@@ -1,25 +1,34 @@
 var validation = function() {
     var firstName = document.getElementById("first-name").value;
-    var firstName = document.getElementById("last-name").value;
-    var firstName = document.getElementById("email").value;
-    var firstName = document.getElementById("password").value;
-    var firstName = document.getElementById("confirm-password").value;
+    var lastName = document.getElementById("last-name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm-password").value;
     var isRestrationsSuccesful = true;
     
     if (firstName === ""){
+        isRestrationsSuccesful = false;
         alert("invalid name!");
     }
     if (lastName === ""){
-        alert("invalid name!");
-    }
-    if (firstName === ""){
-        alert("invalid name!");
+        isRestrationsSuccesful = false;
+        alert("invalid last name!");
     }
     if (email === ""){
-        alert("invalid name!");
+        isRestrationsSuccesful = false;
+        alert("invalid email!");
     }
-    if (firstName === ""){
-        alert("invalid name!");
+    if (confirmPassword === ""){
+        isRestrationsSuccesful = false;
+        alert("invalid password!");
+    }
+    // PASSWORD VALIDATION
+    if (password !== confirmPassword){
+        isRestrationsSuccesful = false;
+        alert("password does not match");
+    }
+    if (confirmPassword === true){
+        alert("Registration Successful!");
     }
 }
 
