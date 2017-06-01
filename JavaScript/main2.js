@@ -1,41 +1,51 @@
 var validation = function() {
-    var firstName = document.getElementById("first-name").value;
-    var lastName = document.getElementById("last-name").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
-    var isRestrationsSuccesful = true;
-    
-    if (firstName === ""){
-        isRestrationsSuccesful = false;
-        alert("invalid name!");
-    }
-    if (lastName === ""){
-        isRestrationsSuccesful = false;
-        alert("invalid last name!");
-    }
-    if (email === ""){
-        isRestrationsSuccesful = false;
-        alert("invalid email!");
-    }
-    if (confirmPassword === ""){
-        isRestrationsSuccesful = false;
-        alert("invalid password!");
-    }
-    // PASSWORD VALIDATION
-    if (password !== confirmPassword){
-        isRestrationsSuccesful = false;
-        alert("password does not match");
-    }
-    if (confirmPassword === true){
-        alert("Registration Successful!");
-    }
-}
+    // Read field values.
 
+    var firstName = $("#first-name").val();
+    var lastName = $("#last-name").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+    var confirmPassword = $("#confirm-password").val();
+    // var firstName = document.getElementById("first-name").value;
+    // var lastName = document.getElementById("last-name").value;
+    // var email = document.getElementById("email").value;
+    // var password = document.getElementById("password").value;
+    // var confirmPassword = document.getElementById("confirm-password").value;
+    var isRegistrationSuccessful = true;
 
+    // Validate that all fields have a value.
+    if (firstName === "") {
+        isRegistrationSuccessful = false;
+        $("#first-name").hide(10000);
+    }
 
+    if (lastName === "") {
+        isRegistrationSuccessful = false;
+        // alert("Last Name cannot be empty!");
+    }
 
+    if (email === "") {
+        isRegistrationSuccessful = false;
+        // alert("Email cannot be empty!");
+    }
 
-// We want each form to validate if it is valid
-// also to make sure that the password and password confirm is the same.
-// the buttom of register runs all the funcitons    
+    if (password === "") {
+        isRegistrationSuccessful = false;
+        // alert("Password cannot be empty!");
+    }
+
+    if (confirmPassword === "") {
+        isRegistrationSuccessful = false;
+        // alert("Confirm Password cannot be empty!");
+    }
+
+    // Validate that Password and ConfirmPassword are equal.
+    if (password !== confirmPassword) {
+        isRegistrationSuccessful = false;
+        // alert("Passwords don't match!");
+    }
+    // If all values are correct, display alert with success message.
+    if (isRegistrationSuccessful === true) {
+        // alert("Registration success!");
+    }
+};

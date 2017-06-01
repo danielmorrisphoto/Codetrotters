@@ -8,4 +8,4 @@ function myApartment() {
 }
 
 console.log('Laundry: ' + laundryRoom +  ', Mail: ' + mailRoom);
-myApartment();
+x();
